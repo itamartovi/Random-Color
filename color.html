@@ -1,0 +1,28 @@
+<html>
+    <head>
+    <style>
+    </style>
+    <script  
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    
+    <script>    
+           $(function(){ //like main
+               
+            $('body').keyup(function(e){
+                if(e.keyCode === 32){
+                    /* $('body').css('background','red');*/
+                    var color = Math.random().toString(16).slice(2,8);
+                    $('body').css('background', '#' + color);
+                }
+            });
+    });
+    </script> 
+       
+    </head>
+    <body>
+      <h1>Hit spacebar to randomize background</h1>  
+    </body>
+</html>
